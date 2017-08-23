@@ -1,19 +1,120 @@
-body {}
+/* base page style */
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  background-color: #FFFFFF;
+}
+
+/* top nav bar style */
 
 ul {
-  list-style-type: none; margin: 0; padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 15;
+  position: relative;
+  overflow: hidden;
+  top: 11px;
+  right: 11px;
 }
 
 li {
   display: inline;
   float: right;
+}
+
+a {
+  display: block;
+  text-decoration-line: none;
+  color: black;
+  opacity: 0.7;
   padding: 8px;
+  text-align: center;
 }
 
-id GoogleLogo {
-  align-self: center;
+a:hover {
+  opacity: 1;
+  text-decoration-line: underline;
 }
 
-form {
-  align-items: center;
+.Apps {
+  height: 16px;
+  width: 16px;
+  opacity: .7;
 }
+
+.Apps:hover {
+  opacity: 1;
+}
+
+.SignIn {
+  color: white;
+  background-color: #3399ff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+
+/* content style */
+.GoogleLogo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.searchBar {
+  text-align: center;
+}
+
+input[type=text] {
+  width: 422px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px #cccccc;
+}
+
+input[type=text]:focus, textarea:focus {
+  border: 2px solid #cccccc;
+  box-shadow: 2px 2px 4px ##b3b3b3;
+}
+
+.sbuttons {
+  text-align: center;
+}
+
+input[type=submit]{
+  position: relative;
+  margin-left: auto;
+  display: block;
+  width: 150px;
+  height: 26px;
+  border: none;
+  background-color:#f2f2f2;
+  opacity: 0.8;
+}
+
+input[type=submit]:hover{
+  opacity: 1;
+  border: 1px black solid;
+  background-color: #f2f2f2;
+}
+
+input[type=submit].GoogleSearch{
+	margin-left: 286px;
+}
+
+input[type=submit].FeelingLucky{
+	margin-left: 446px;
+}
+
+.add4g {
+  position: absolute;
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* bottom bar style */
