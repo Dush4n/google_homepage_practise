@@ -58,14 +58,16 @@ a:hover {
 
 /* content style */
 .GoogleLogo {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 120px;
-  text-align: center;
 }
 
 .searchBar {
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input[type=text] {
@@ -82,14 +84,15 @@ input[type=text]:focus, textarea:focus {
   box-shadow: 2px 2px 4px ##b3b3b3;
 }
 
-.sbuttons {
-  text-align: center;
+
+.searchButtons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
 }
 
 input[type=submit]{
-  position: relative;
-  margin-left: auto;
-  display: block;
   width: 150px;
   height: 26px;
   border: none;
@@ -100,19 +103,12 @@ input[type=submit]{
 input[type=submit]:hover{
   opacity: 1;
   border: 1px black solid;
-  background-color: #f2f2f2;
 }
 
-input[type=submit].GoogleSearch{
-	margin-left: 286px;
-}
-
-input[type=submit].FeelingLucky{
-	margin-left: 446px;
-}
 
 .add4g {
-  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   opacity: 0.7;
 }
